@@ -1,4 +1,5 @@
 const Koa = require('koa');
+const axios = require('axios');
 //const koaSession = require('koa-session');
 //const koaStatic = require('koa-static');
 const bodyParser = require('koa-bodyparser');
@@ -9,6 +10,22 @@ const colors = require('colors');
 const transController = require('./controllers/transController.js');
 
 const server = new Koa();
+
+
+var instance = axios.create({
+  baseURL: 'http://169.51.7.198:31090/api/',
+  timeout: 2000,
+  headers: {'Content-Type': 'application/json'}
+});
+
+instance.get('/partner')
+.then(function (response) {
+  console.log(response.data);
+})
+.catch(function (error) {
+  console.log(error);
+});
+
 
 server.use(bodyParser());
 
