@@ -99,3 +99,17 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+
+.yarnclean
+# node modules
+node_modules
+# npm debug file or yarn error file
+*.log
+# ide
+.idea
+.vscode
+# static
+static/upload/*
+#logs
+logs/*
