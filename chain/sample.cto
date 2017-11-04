@@ -3,15 +3,15 @@
  */
 namespace org.acme.sample
 
-asset SampleAsset identified by _id {
-  o String _id
+asset SampleAsset identified by assetId {
+  o String assetId
   --> SampleParticipant owner
   o Long sum_exchange
   o Long sum_toasset
 }
 
-participant SampleParticipant identified by uid {
-  o String uid
+participant SampleParticipant identified by participantId {
+  o String participantId
   o String indicator
   o Boolean vaild_user
 }
@@ -25,4 +25,3 @@ transaction SampleTransaction {
 event SampleEvent {
   --> SampleAsset asset
 }
-

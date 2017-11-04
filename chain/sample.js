@@ -1,16 +1,17 @@
+/**
+ * Sample transaction processor function.
+ * @param {org.acme.sample.SampleTransaction} tx The sample transaction instance.
+ * @transaction
+ */
 function sampleTransaction(tx) {
     
         // Save the old value of the asset.
-        var newexchange = tx.asset.sum_exchange+tx.exchange;
+        var oldValue1 = tx.asset.sum_exchange;
+        var oldValue2 = tx.asset.sum_toasset;
     
         // Update the asset with the new value.
-        tx.asset.sum_exchange = newexchange;
-      
-        // Save the old value of the asset.
-        var newtoasset = tx.asset.sum_toasset+tx.toasset;
-    
-        // Update the asset with the new value.
-        tx.asset.sum_toasset = newtoasset;
+        tx.asset.sum_exchange = tx.exchange + oldValue1;
+        tx.asset.sum_toasset = tx.toasset + oldValue2;
     
         // Get the asset registry for the asset.
         return getAssetRegistry('org.acme.sample.SampleAsset')
@@ -30,4 +31,3 @@ function sampleTransaction(tx) {
             });
     
     }
-    
