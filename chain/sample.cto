@@ -1,0 +1,28 @@
+/**
+ * Sample business network definition.
+ */
+namespace org.acme.sample
+
+asset SampleAsset identified by _id {
+  o String _id
+  --> SampleParticipant owner
+  o Long sum_exchange
+  o Long sum_toasset
+}
+
+participant SampleParticipant identified by uid {
+  o String uid
+  o String indicator
+  o Boolean vaild_user
+}
+
+transaction SampleTransaction {
+  --> SampleAsset asset
+  o Long exchange
+  o Long toasset
+}
+
+event SampleEvent {
+  --> SampleAsset asset
+}
+
