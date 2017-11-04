@@ -98,11 +98,11 @@
               <thead>
                 <tr>
                   <th>#</th>
+                  <th>date</th>
                   <th>Description</th>
                   <th>User</th>
                   <th>Header</th>
-                  <th>Debit</th>
-                  <th>Credit</th>
+                  <th>Exchange</th>
                   <th>assset</th>
                 </tr>
               </thead>
@@ -112,7 +112,6 @@
                   <td>Lorem</td>
                   <td>ipsum<br>32323</td>
                   <td>dolor<br>32323</td>
-                  <td>ipsum<br>32323</td>
                   <td>dolor<br>32323</td>
                   <td>sit<br>32323</td>
                 </tr>
@@ -121,7 +120,6 @@
                   <td>Lorem</td>
                   <td>ipsum<br>32323</td>
                   <td>sit<br>32323</td>
-                  <td>ipsum<br>32323</td>
                   <td>dolor<br>32323</td>
                   <td>sit<br>32323</td>
                 </tr>
@@ -144,7 +142,7 @@
     <script>
     $(document).ready(function(){
       $("button").click(function(){
-        $("#div1").load("/try/ajax/demo_test.txt",function(responseTxt,statusTxt,xhr){
+        $("trans-table").load("/try/ajax/demo_test.txt",function(responseTxt,statusTxt,xhr){
           if(statusTxt=="success")
             alert("外部内容加载成功!");
           if(statusTxt=="error")
