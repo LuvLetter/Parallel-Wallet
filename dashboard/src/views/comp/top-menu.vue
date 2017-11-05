@@ -6,19 +6,19 @@
 				<router-link to="/">
 					<MenuItem name="1">
 						<Icon type="ios-navigate"></Icon>
-						Homss
+						首页
 					</MenuItem>
 				</router-link>
 				<router-link to="/profile">
 					<MenuItem name="2">
 						<Icon type="ios-analytics"></Icon>
-						Profile
+						支付方式
 					</MenuItem>
 				</router-link>
 				<router-link to="/help">
 					<MenuItem name="3">
 						<Icon type="ios-paper"></Icon>
-						Help
+						帮助
 					</MenuItem>
 				</router-link>
 			</div>

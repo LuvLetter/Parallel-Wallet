@@ -56,10 +56,9 @@ const store = new Vuex.Store({
     .then(response => {Vue.MainTable.data1 = response.data});
 
 
-new Vue({
+new Vue({ 
     el: '#app',
     router: router,
     store: store,
     render: h => h(App)
 });
-Vue.http.headers.common['Access-Control-Allow-Origin'] = 'http://139.199.7.161:4000'

@@ -4,9 +4,7 @@
 			<ul>
 				<li>
 					<a :href="item.url" target="_blank">{{ item.name }}</a>
-					<div>Address{{ item.address }}</div>
-					<Button type="primary" size="small">Primary</Button>
-					<Button type="ghost" size="small">Ghost</Button>
+					<div>地址: {{ item.address }}</div>
 				</li>
 			</ul>
 		</Card>
@@ -18,7 +16,7 @@
             return {
                 paymentList: [
                     {
-                        name: '我在做什么',
+                        name: '地址',
                         url: 'https://movie.douban.com/subject/1292052/',
                         address: '1429uoqwjr23ou1pr3j94104ju190'
                     }, {

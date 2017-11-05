@@ -30,18 +30,7 @@
                 </Col>
                 <Col span="19">
                 <div class="layout-content-main">
-                    <i-circle :percent="50">
-                        <span class="demo-Circle-inner" style="font-size:30px">50%</span>
-                    </i-circle>
-                    <i-circle :percent="40">
-                        <span class="demo-Circle-inner" style="font-size:30px">40%</span>
-                    </i-circle>
-                    <i-circle :percent="80">
-                        <span class="demo-Circle-inner" style="font-size:30px">80%</span>
-                    </i-circle>
-                    <i-circle :percent="80">
-                        <span class="demo-Circle-inner" style="font-size:30px">80%</span>
-                    </i-circle>
+
                     <MainTable></MainTable>
                 </div>
                 </Col>

@@ -4,19 +4,19 @@
 			<router-link to="/">
 				<MenuItem>
 					<Icon type="ios-navigate"></Icon>
-					Overview
+					总览
 				</MenuItem>
 			</router-link>
 			<router-link to="/analytics">
 				<MenuItem>
 					<Icon type="ios-analytics"></Icon>
-					Analytics
+					分析
 				</MenuItem>
 			</router-link>
 			<router-link to="/export">
 				<MenuItem>
 					<Icon type="ios-keypad"></Icon>
-					Export
+					Export to Blockchain
 				</MenuItem>
 			</router-link>
 		</Menu>
