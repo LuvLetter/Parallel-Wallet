@@ -52,7 +52,7 @@ const store = new Vuex.Store({
     }
 });
 
-    Util.ajax.get("/partner")
+    Util.ajax.get("http://139.199.7.161:4000/getTable")
     .then(response => {Vue.MainTable.data1 = response.data});
 
 
@@ -62,3 +62,4 @@ new Vue({
     store: store,
     render: h => h(App)
 });
+Vue.http.headers.common['Access-Control-Allow-Origin'] = 'http://139.199.7.161:4000'
