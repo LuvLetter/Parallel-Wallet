@@ -10,10 +10,10 @@ util.title = function(title) {
 };
 
 const ajaxUrl = env === 'development' ?
-    'http://127.0.0.1:8888' :
+    'http://169.51.7.198:31090/api/' :
     env === 'production' ?
-    'https://www.url.com' :
-    'https://debug.url.com';
+    'http://169.51.7.198:31090/api/' :
+    'http://169.51.7.198:31090/api/';
 
 util.ajax = axios.create({
     baseURL: ajaxUrl,

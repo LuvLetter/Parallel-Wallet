@@ -13,14 +13,17 @@ router.get('/getTable', async function (ctx) {
     ctx.body = await Trans.find({});
 });
 
-router.post('/blockchainSubmit', async function (ctx) {
+router.post('/getTable', async function (ctx) {
     const dateTime = Date.now();
     const timestamp = Math.floor(dateTime / 1000);
     var tp1 = await ctx.request.body;
     var tp2 = {
+        transactionId: tp1.transactionId,
+        timestamp: tp1.timestamp,
         description: tp1.description,
-        date: timestamp,
-        Entry: tp1.Entry
+        asset: tp1.asset,
+        exchange: tp1.exchange,
+        For_asset: tp1.For_asset,
     }
     var tmp = Trans(tp2);
     tmp.save(function(err) {

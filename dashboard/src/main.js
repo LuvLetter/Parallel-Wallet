@@ -52,6 +52,9 @@ const store = new Vuex.Store({
     }
 });
 
+    Util.ajax.get("/partner")
+    .then(response => {Vue.MainTable.data1 = response.data});
+
 
 new Vue({
     el: '#app',

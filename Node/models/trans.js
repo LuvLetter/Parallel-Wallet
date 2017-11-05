@@ -11,7 +11,7 @@ var transSchema = new Schema({
   transactionId: String,
   timestamp: String,
   description: String,
-  asset: Number,
+  asset: String,
   exchange: Number,
   For_asset: Number,
 });
