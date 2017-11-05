@@ -8,10 +8,12 @@ mongoose.connect('mongodb://localhost/wallet',{
 
 // create a schema
 var transSchema = new Schema({
-  //trans_id: Number, 使用MongoDB ID
+  transactionId: String,
+  timestamp: String,
   description: String,
-  date: Number,
-  Entry: [{ vaild_user: Boolean, uid: Number, indicator: String,Detail: [{ exchange: Number, asset: Number}]}]
+  asset: Number,
+  exchange: Number,
+  For_asset: Number,
 });
 
 // the schema is useless so far

@@ -1,23 +1,23 @@
 /**
  * Sample business network definition.
  */
-namespace org.acme.sample
+namespace wallet
 
-asset partner_info identified by info_Id {
-  o String info_Id
-  --> partner partnerId
-  o Long sum_exchange
-  o Long sum_asset
+asset partner_info identified by id {
+  o String id
+  --> partner name
+  o Long value
 }
 
-participant partner identified by partnerId {
-  o String partnerId
-  o String indicator
-  o Boolean vaild_user
+participant partner identified by name {
+  o String name
+  o String url
+  o String address
 }
 
 transaction trans {
   --> partner_info asset
+  o String description
   o Long exchange
   o Long For_asset
 }

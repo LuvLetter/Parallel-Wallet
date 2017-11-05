@@ -37,12 +37,11 @@
                             type: 'pie',
                             radius : '55%',
                             center: ['50%', '60%'],
-                            data:[
-                                {value:335, name:'交通出行'},
+                            data: [{value:335, name:'交通出行'},
                                 {value:310, name:'线下消费'},
                                 {value:234, name:'网上购物'},
-                                {value:135, name:'虚拟消费'}
-                            ],
+                                {value:135, name:'虚拟消费'}]
+                            ,
                             itemStyle: {
                                 emphasis: {
                                     shadowBlur: 10,
