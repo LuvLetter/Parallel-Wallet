@@ -4,7 +4,7 @@
 			<ul>
 				<li>
 					<a :href="item.url" target="_blank">{{ item.name }}</a>
-					<div>地址: {{ item.address }}</div>
+					<div>BTC地址: {{ item.address }}</div>
 				</li>
 			</ul>
 		</Card>
@@ -16,26 +16,22 @@
             return {
                 paymentList: [
                     {
-                        name: '地址',
-                        url: 'https://movie.douban.com/subject/1292052/',
-                        address: '1429uoqwjr23ou1pr3j94104ju190'
+                        name: '张三',
+                        url: 'http://www.qukuai.com/search/address/18TMeb6Nvt2aPzaFommqYdn1A3dyiD5aDy',
+                        address: '18TMeb6Nvt2aPzaFommqYdn1A3dyiD5aDy'
                     }, {
-                        name: '地址',
-                        url: 'https://.douban.com/subject/1292052/',
-                        address:'93u0147183wiwor38y5-1wjr19up3437uwri3h'
+                        name: '小红',
+                        url: 'https://blockchain.info/zh-cn/address/1DYca3usAboNkio3XqiCUUbRsQQsRwg7SX',
+                        address:'1DYca3usAboNkio3XqiCUUbRsQQsRwg7SX'
                     }, {
-                        name: '地址',
-                        url: 'https://.douban.com/subject/1292052/',
-                        address:'93u0147183wiwor38y5-1wjr19up3437uwri3h'
+                        name: '小明',
+                        url: 'https://blockchain.info/zh-cn/address/1KaV5ZG9mWfMRMqdiV2Qm3rB7d558zeZVb',
+                        address:'1KaV5ZG9mWfMRMqdiV2Qm3rB7d558zeZVb'
                     }, {
-                        name: '地址',
-                        url: 'https://.douban.com/subject/1292052/',
-                        address:'93u0147183wiwor38y5-1wjr19up3437uwri3h'
-                    }, {
-                        name: '地址',
-                        url: 'https://.douban.com/subject/1292052/',
-                        address:'93u0147183wiwor38y5-1wjr19up3437uwri3h'
-                    },
+                        name: '小蓝',
+                        url: 'https://blockchain.info/zh-cn/address/17mP3RxwWuMXVFuE5HWsLiV7Roa2WaywgW',
+                        address:'17mP3RxwWuMXVFuE5HWsLiV7Roa2WaywgW'
+                    }
 
                 ],
                 randomMovieList: []
